@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "ambroise";
+  src: url("../AmbroiseStd-Italic.otf");
+}
+
+@font-face {
+  font-family: "grotesk";
+  src: url("../URW Grotesk Cond Bold.ttf");
+}
+
+@layer components {
+  .ball-size {
+    width: clamp(2rem, 1.077rem + 9.846vw, 6rem);
+    height: clamp(2rem, 1.077rem + 9.846vw, 6rem);
+  }
+
+  .title-size {
+    font-size: clamp(1.5rem, -0.446rem + 4.054vw, 3rem);
+  }
+
+  .title-size-mobile {
+    font-size: clamp(0.6rem, -0.3rem + 4.8vw, 1.5rem);
+  }
+
+  .menu-title-size {
+    font-size: clamp(1.875rem, 1.148rem + 1.515vw, 2rem);
+  }
+
+  .menu-title-mobile-size {
+    font-size: clamp(0.875rem, 0.474rem + 2.141vw, 1.5rem);
+  }
+
+  .title-size-mobile-first-page {
+    font-size: clamp(0.875rem, 0.474rem + 2.141vw, 2rem);
+  }
+
+  .height-bar {
+    height: clamp(45.063rem, 40.646rem + 23.555vw, 51.938rem);
+  }
+
+  .padding-title {
+    padding-left: clamp(0.5rem, -2.5rem + 16vw, 3rem);
+  }
+
+  .padding-title-first-page {
+    padding-left: clamp(0.5rem, -2.5rem + 16vw, 3rem);
+  }
+
+  .hovering {
+    @apply hover:text-blue-700 cursor-pointer ease-in-out duration-300;
+  }
+}
+
+.bg-hero-artists {
+  background-image: url("../pics/bg-hero.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-single-artist {
+  background-image: url("../pics/cyan-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
+}
+
+.bg-dark-blue {
+  background-image: url("../pics/dark-blue-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  opacity: 0.5;
+  transition: all 0.25s;
+  transform: translate(500px, 0px);
+}
+
+.image-box:hover:before {
+  transform: translate(0px, 0px);
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  transform: translate(200px, -200px);
+  transition: all 0.25s;
+}
+
+.image-box:hover h2 {
+  transform: translate(0px, 0px);
+  transition-delay: 0.3s;
+}
+
+p {
+  transform: translate(-400px, 0px);
+  transition: all 0.25s;
+}
+
+.image-box:hover p {
+  transform: translate(0px, 0px);
+  transition-delay: 0.4s;
+}
+
+a {
+  transform: translate(0px, 120px);
+  transition: all 0.25s;
+}
+
+.image-box:hover a {
+  transform: translate(0px, 0px);
+  transition-delay: 0.5s;
+}
