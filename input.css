@@ -12,6 +12,11 @@
   src: url("../URW Grotesk Cond Bold.ttf");
 }
 
+@font-face {
+  font-family: "impact";
+  src: url("../impact.ttf");
+}
+
 @layer components {
   .ball-size {
     width: clamp(2rem, 1.077rem + 9.846vw, 6rem);
@@ -73,6 +78,29 @@
   background-size: cover;
 }
 
+.fading-showing-up {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.change-cyan-text {
+  color: rgb(103, 232, 249);
+}
+
+.change-yellow-text {
+  color: rgb(253, 224, 71);
+}
+
 .image-box:before {
   content: "";
   position: absolute;
@@ -118,12 +146,20 @@ p {
   transition-delay: 0.4s;
 }
 
-a {
+.read-more {
   transform: translate(0px, 120px);
   transition: all 0.25s;
 }
 
-.image-box:hover a {
+.image-box:hover .read-more {
   transform: translate(0px, 0px);
   transition-delay: 0.5s;
+}
+
+.text-image-hamid {
+  font-size: clamp(0.625rem, 0.122rem + 1.047vw, 0.875rem);
+}
+
+.p-image-hamid {
+  font-size: clamp(0.5rem, 0.179rem + 1.713vw, 1rem);
 }

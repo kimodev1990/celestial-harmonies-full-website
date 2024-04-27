@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="description" content="deuter Page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Deutor</title>
 </head>
 
-<body class="bg-single-artist">
+<body class="relative">
+    <div class="absolute top-4 left-4 md:w-14 w-7">
+        <a href="./artists.html"><img src="./pics/back-arrow.png" alt="back arrow"></a>
+    </div>
     <!-- Header -->
-    <div class="py-6">
+    <div class="py-6 bg-cyan-300">
         <div>
             <div class="mx-auto max-w-40 " data-aos-once="true" data-aos-duration="2000" data-aos="zoom-in">
                 <a href="./directory.html "><img src="./pics/logo-black.png" alt="black logo"></a>
@@ -20,9 +23,20 @@
         </div>
     </div>
 
+    <!-- nav bar -->
+    <div
+        class="flex md:flex-row flex-col items-center justify-center py-6 md:space-x-20 md:space-y-0 space-x-0 space-y-5 bg-black">
+        <h1 id="choose-bio" class="change-cyan-text font-ambroise text-3xl underline underline-offset-2 cursor-pointer">
+            Biography</h1>
+        <h1 id="choose-songs"
+            class="change-yellow-text font-ambroise text-3xl underline underline-offset-2 cursor-pointer">
+            Discography
+        </h1>
+    </div>
+
     <!-- Body -->
-    <div class="bg-dark-blue ">
-        <div class="text-white">
+    <div class="bg-blue-950 pb-10">
+        <div class="text-white px-6 fading-showing-up" id="bio">
             <img class="w-[500px] float-right" src="./pics/deuter.webp" alt="deuter">
             <h5 class="mb-4 pt-20">Deuter, one of the first artists on the Kuckuck label, has thirteen titles on
                 Kuckuck, as
@@ -92,30 +106,133 @@
                 radiant outpourings
                 and quiet meditations.
             </h5>
-            <div class=" w-fit mx-auto">
-                <a href="#">
-                    <h1 class=" font-ambroise text-3xl underline underline-offset-2 my-8">
-                        Discography
-                    </h1>
-                </a>
+        </div>
+        <div class="hidden py-10 fading-showing-up" id="songs">
+            <div class="text-white flex flex-col items-start space-y-4 max-w-2xl mx-auto">
+                <button class="flex items-center justify-center space-x-4">
+                    <img class="w-5" src="./pics/redot.gif">
+                    <a href="#">
+                        <h5 class="text-yellow-300 underline underline-offset-1">1109</h5>
+                    </a>
+                    <h1>D</h1>
+                </button>
+                <button class="flex items-center justify-center space-x-4">
+                    <img class="w-5" src="./pics/redot.gif">
+                    <a href="#">
+                        <h5 class="text-yellow-300 underline underline-offset-1">11017</h5>
+                    </a>
+                    <h1>AUM</h1>
+                </button>
+                <button class="flex items-center justify-center space-x-4">
+                    <img class="w-5" src="./pics/redot.gif">
+                    <a href="#">
+                        <h5 class="text-yellow-300 underline underline-offset-1">11040</h5>
+                    </a>
+                    <h1>CELEBRATION</h1>
+                </button>
+                <button class="flex items-center justify-center space-x-4">
+                    <img class="w-5" src="./pics/redot.gif">
+                    <a href="#">
+                        <h5 class="text-yellow-300 underline underline-offset-1">11042</h5>
+                    </a>
+                    <h1>HALEAKALA</h1>
+                </button>
+                <button class="flex items-center justify-center space-x-4">
+                    <img class="w-5" src="./pics/redot.gif">
+                    <a href="#">
+                        <h5 class="text-yellow-300 underline underline-offset-1">11044</h5>
+                    </a>
+                    <h1>ECSTASY</h1>
+                </button>
+                <button class="flex items-center justify-center space-x-4">
+                    <img class="w-5" src="./pics/redot.gif">
+                    <a href="#">
+                        <h5 class="text-yellow-300 underline underline-offset-1">12049</h5>
+                    </a>
+                    <h1>SILENCE IS THE ANSWER</h1>
+                </button>
+                <button class="flex items-center justify-center space-x-4">
+                    <img class="w-5" src="./pics/redot.gif">
+                    <a href="#">
+                        <h5 class="text-yellow-300 underline underline-offset-1">11056</h5>
+                    </a>
+                    <h1>CICADA</h1>
+                </button>
+                <button class="flex items-center justify-center space-x-4">
+                    <img class="w-5" src="./pics/redot.gif">
+                    <a href="#">
+                        <h5 class="text-yellow-300 underline underline-offset-1">11068</h5>
+                    </a>
+                    <h1>NIRVANA ROAD</h1>
+                </button>
+                <button class="flex items-center justify-center space-x-4">
+                    <img class="w-5" src="./pics/redot.gif">
+                    <a href="#">
+                        <h5 class="text-yellow-300 underline underline-offset-1">12076</h5>
+                    </a>
+                    <h1 class="md:text-base text-xs">CALL OF THE UNKNOWN: SELECTED PIECES 1972-1986 (2 CD)</h1>
+                </button>
+                <button class="flex items-center justify-center space-x-4">
+                    <img class="w-5" src="./pics/redot.gif">
+                    <a href="#">
+                        <h5 class="text-yellow-300 underline underline-offset-1">11081</h5>
+                    </a>
+                    <h1>LAND OF ENCHANTMENT</h1>
+                </button>
+                <button class="flex items-center justify-center space-x-4">
+                    <img class="w-5" src="./pics/redot.gif">
+                    <a href="#">
+                        <h5 class="text-yellow-300 underline underline-offset-1">11084</h5>
+                    </a>
+                    <h1>SAN</h1>
+                </button>
+                <button class="flex items-center justify-center space-x-4">
+                    <img class="w-5" src="./pics/redot.gif">
+                    <a href="#">
+                        <h5 class="text-yellow-300 underline underline-offset-1">12090</h5>
+                    </a>
+                    <h1 class="text-xs md:text-base">SANDS OF TIME: SELECTED STUDIO & CONCERT RECORDINGS 1974-1990 (2
+                        CD)</h1>
+                </button>
+                <button class="flex items-center justify-center space-x-4">
+                    <img class="w-5" src="./pics/redot.gif">
+                    <a href="#">
+                        <h5 class="text-yellow-300 underline underline-offset-1">11099</h5>
+                    </a>
+                    <h1>HENON</h1>
+                </button>
+                <button class="flex items-center justify-center space-x-4">
+                    <img class="w-5" src="./pics/redot.gif">
+                    <a href="#">
+                        <h5 class="text-yellow-300 underline underline-offset-1">13016</h5>
+                    </a>
+                    <h1 class="text-xs md:text-base">EARTH'S ANSWER - VARIOUS ARTISTS</h1>
+                </button>
+                <button class="flex items-center justify-center space-x-4">
+                    <img class="w-5" src="./pics/redot.gif">
+                    <a href="#">
+                        <h5 class="text-yellow-300 underline underline-offset-1">19001</h5>
+                    </a>
+                    <h1 class="text-xs md:text-base">THE PETRIFIED FOREST - A PICTURE POEM</h1>
+                </button>
             </div>
-
         </div>
 
-        <!-- Footer -->
-        <div class="bg-slate-400 text-white py-8">
-            <div class="flex md:flex-row flex-col justify-center space-y-6 md:space-x-0 items-center md:justify-evenly">
-                <div class="max-w-40 ">
-                    <a href="./directory.html "><img src="./pics/logo-black.png" alt="black logo"></a>
-                </div>
-                <div class="text-lg text-black font-semibold text-center">
-                    <h5>P.O Box 30122 Tucson, Arizona
-                        85751</h5>
-                    <h5>+1 520
-                        326 4400</h5>
-                    <h5>Fax +1
-                        520 326 3333</h5>
-                </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-slate-400 text-white py-8">
+        <div class="flex md:flex-row flex-col justify-center space-y-6 md:space-x-0 items-center md:justify-evenly">
+            <div class="max-w-40 ">
+                <a href="./directory.html "><img src="./pics/logo-black.png" alt="black logo"></a>
+            </div>
+            <div class="text-lg text-black font-semibold text-center">
+                <h5>P.O Box 30122 Tucson, Arizona
+                    85751</h5>
+                <h5>+1 520
+                    326 4400</h5>
+                <h5>Fax +1
+                    520 326 3333</h5>
             </div>
         </div>
     </div>
@@ -129,6 +246,7 @@
             once: true
         });
     </script>
+    <script src="./deuter.js"></script>
 </body>
 
 </html>

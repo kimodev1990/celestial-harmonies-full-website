@@ -11,10 +11,13 @@ module.exports = {
     extend: {
       colors: {
         "deep-black": "#000000",
+        "hamid-bg-title": "#C7B299",
+        "hamid-bg-hero": "#BDBDBD",
       },
 
       fontFamily: {
         ambroise: ["ambroise", "sans-serif"],
+        impact: ["impact", "sans-serif"],
         grotesk: ["grotesk", "serif"],
       },
     },
