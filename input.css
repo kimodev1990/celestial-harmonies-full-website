@@ -17,6 +17,11 @@
   src: url("../impact.ttf");
 }
 
+@font-face {
+  font-family: "ocr";
+  src: url("../OCRBStd.otf");
+}
+
 @layer components {
   .ball-size {
     width: clamp(2rem, 1.077rem + 9.846vw, 6rem);
@@ -162,4 +167,14 @@ p {
 
 .p-image-hamid {
   font-size: clamp(0.5rem, 0.179rem + 1.713vw, 1rem);
+}
+
+.clipped {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  line-height: 5.9rem;
+}
+
+.char {
+  transform: translateY(115px);
+  transition: transform 0.5s;
 }

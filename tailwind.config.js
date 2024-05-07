@@ -19,6 +19,7 @@ module.exports = {
         ambroise: ["ambroise", "sans-serif"],
         impact: ["impact", "sans-serif"],
         grotesk: ["grotesk", "serif"],
+        ocr: ["ocr", "sans-serif"],
       },
     },
   },
